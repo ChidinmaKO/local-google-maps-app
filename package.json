@@ -1,0 +1,44 @@
+{
+  "name": "local-google-maps-app",
+  "version": "1.0.0",
+  "description": "Local google maps clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChidinmaKO/local-google-maps-app.git"
+  },
+  "keywords": [
+    "Api",
+    "google",
+    "maps",
+    "es6",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "ChidinmaKO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChidinmaKO/local-google-maps-app/issues"
+  },
+  "homepage": "https://github.com/ChidinmaKO/local-google-maps-app#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-uglify": "^3.0.1",
+    "node-normalize-scss": "^8.0.0"
+  }
+}

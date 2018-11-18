@@ -163,9 +163,9 @@ function markersForPlaces(places) {
         var place = places[i];
         var icon = {
             url: place.icon,
-            size: new google.maps.Size(70, 70),
+            size: new google.maps.Size(35, 35),
             origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(17, 34),
+            anchor: new google.maps.Point(15, 34),
             scaledSize: new google.maps.Size(25, 25)
         };
 
@@ -199,8 +199,6 @@ function markersForPlaces(places) {
     }
     map.fitBounds(bounds);
 }
-
-function placeMarkers() {}
 
 // for the place details
 function getPlacesDetails(marker, infowindow) {

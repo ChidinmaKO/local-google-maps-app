@@ -20,24 +20,70 @@ body {
     color: $darkblue;
 }
 
-h1{
-    color:$anotherblue;
-}
-
-.wrapper{
+.wrapper {
     height: 100%;
     position: relative;
 }
 
-input[type=text]{
+.container {
+    height: 100%;
+    border: 1px solid $anotherblue;
+    border-radius: 2px;
+    text-align: left;
+    line-height: 35px;
+    padding: 10px 10px 30px 10px;
+    width: 355px;
+}
+
+#map {
+    height:100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 355px;
+    right: 0;
+}
+
+h1 {
+    color:$anotherblue;
+    letter-spacing: 3px;
+}
+
+input[type=text] {
     padding:16px 20px;
 }
 
-input:focus{
+input:focus {
     outline:none;
     /* box-shadow: 0 8px 6px -6px black;  */
 }
 
-#map{
-    height:100%;
+#search {
+    width: 82%;
+    border-radius: 3px;
+    // border: 2px solid $anotherblue;
+    border: 2px solid $zinc;
+}
+
+#button {
+    width: 16%;
+    padding: 16px 10px;
+    border-radius: 3px;
+    border: 2px solid $zinc;
+    cursor: pointer;
+    background-color: $white;
+    color: $anotherblue;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    &:hover {
+        background-color: $anotherblue;
+        color: $white;
+        border-radius: 3px;
+        border: 2px solid $anotherblue;
+    }
+}
+
+.inner {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid $anotherblue;
 }

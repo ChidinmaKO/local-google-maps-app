@@ -97,17 +97,28 @@ function initMap() {
         mapTypeId: 'terrain'
     });
 
-    var searchBox = new google.maps.places.SearchBox(
-        document.getElementById('search')
-    );
+    var textInput = document.getElementById('search');
+    var searchBox = new google.maps.places.SearchBox(textInput);
+
+    // Bias the users SearchBox results towards the current maps viewport.
+    map.addListener('bounds_changed', function() {
+        searchBox.setBounds(map.getBounds());
+    });
 
     var infoWindow = new google.maps.InfoWindow();
 
     var defaultIcon;
     var highlightedIcon;
+
+    searchBox.addListener('places_changed', function() {
+        searchBoxPlaces(this);
+    });
+
+    /* 
+     * listen for the click event fired when the 
+     *   user selects a place and clicks go for that place.
+    */
+    document.getElementById('button').addEventListener('click', searchPlaces);
 }
 
-
-
-
-
+function searchPlaces() {}
